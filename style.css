@@ -70,7 +70,7 @@ footer {
 }
 .btn-mail {
   text-align: center;
-  display: inline-block;
+  display: block;
   background-color: #0077cc;
   color: #fff;
   padding: 12px 24px;
