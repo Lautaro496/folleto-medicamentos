@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  min-height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #0077cc;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
+.linkmail{
+  color: blueviolet;
+  cursor: pointer;
+
+}
+.linkmail:hover{
+  color:rgba(221, 156, 236, 1;
+  transform: scale(1.03);
+  transition: color 1s ease, transform 0.2s ease;
+
+}
+.btn-contenedor{
+  display: flex;
+  justify-content:center;
+  margin-top: 20px;
+}
+.btn-mail {
+  text-align: center;
+  display: inline-block;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-mail:hover {
+  background-color: #005fa3;
+  transform: scale(1.03);
+}
