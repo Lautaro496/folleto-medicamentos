@@ -32,10 +32,12 @@ li {margin-bottom: 15px;}
 
 footer {
   text-align: center;
-  margin-top: 30px;
-  font-size: 0.9em;
-  color: #666;
+  padding: 15px;
+  background-color: #eaeaea;
+  font-size: 0.9rem;
+  color: #555;
 }
+
 
 /* Responsive tweaks */
 @media screen and (max-width: 600px) {
