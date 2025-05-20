@@ -1,32 +1,114 @@
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Solicitud de Medicamentos</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>💊 Solicitud de Medicamentos</h1>
-      <p>¡Hola! Estos son los pasos para solicitar tus medicamentos:</p>
-    </header>
-    <ol>
-      <li><strong>Revisá tu receta médica</strong><br>Asegurate de que esté actualizada  y legible.</li>
-      <li><strong>Asegurate que la receta
-      </strong><br>indique nombre, DNI, dosis y cantidad.</li>
-      <li><strong>Adjuntá foto de la receta y del DNI  </strong><br> foto del DNI del paciente de ambos lados y foto nitida de la receta.</li>
-      <li><strong>Enviá la solicitud</strong><br>Clickea el boton al final.</li>
-      <li><strong>Esperá la confirmación</strong><br>Te contactaremos por email. <strong><a class="linkmail">ayudadirecta@tzedaka.org.ar</a></li>
- <div class="btn-contenedor">       
-<a href="mailto:ayudadirecta@tzedaka.org.ar" class="btn-mail">
-  📧 Enviar solicitud por correo
-</a>
-  </div>
-    </ol>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitud de Medicamentos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <div id="modalInicio" class="modal-inicio">
+      <div class="modal-contenido">
+        <div id="modalCerrar" class="modal-cerrar">&times;</div>
+        <h2>¿Que deseas realizar?</h2>
+        <div class="opciones">
+          <button class="opcion" data-section="0">DONAR MEDICAMENTOS</button>
+          <button class="opcion" data-section="1">
+            DONAR MUEBLES, LIBROS, ROPA
+          </button>
+          <button class="opcion" data-section="2">
+            SOLICITAR MEDICAMENTOS
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mainContainer" class="container">
+      <!--contenedor donar -->
+      <div id="donar" class="container donar">
+        <h1>DONACIONES BANCO COMUNITARIO DE MEDICAMENTOS</h1>
+        <p>
+          ¡Hola! te compartimos la info que necesitas para hacer tu donación de
+          medicamentos y/o insumos
+        </p>
+        <ol>
+          <img
+            src="https://raw.githubusercontent.com/Lautaro496/folleto-medicamentos/5e4e0189733f18105d35cc05d7e69633d734a674/src/img/wsp%20campa%C3%B1a%20donacion.jpg"
+            alt="Imagen de tips de donacion de Tzedaka" height="70%" 
+            />
+          <li><strong>Medicamentos con fecha superior a 6 meses</strong></li>
+          <li><strong>Envases y frascos sin abrir</strong></li>
+          <li><strong>Blisters completos e incompletos</strong><br /></li>
+          <li>
+            <strong>Medicamentos que no requieren refrigeracion</strong><br />
+          </li>
+          <li><strong>No recibimos psicofarmacos</strong><br /></li>
+          <li><strong>Comunicate con nosotros</strong></li>
+          <li>
+            <strong>CONTACTO</strong>
+            <br />
+            <span>Email:</span><a class="linkmail" href="mailto: salud@tzedaka.org.ar"> salud@tzedaka.org.ar </a>
+            <br />
+            <span>WhatsApp:</span><a class="linkmail"> 1131035159 </a>
+          </li>
+        </ol>
+        <div class="btn-contenedor">
+          <a href="https://wa.me/+5401131035159" class="btn-tzedek">
+            Comunicate por WhatsApp</a
+          >
+        </div>
+      </div>
+      <!--contenedor tzedek-->
+      <div id="tzedek" class="container tzedek">
+        <h1>TZEDEK</h1>
+        <p>
+          ¡Hola! te compartimos la info que necesitas para donar tus muebles,
+          ropa, libros, juguetes, elementos de ortopedia y electrodomesticos.
+        </p>
+        <ol>
+          <li><strong>Seleccioná lo que no usas</strong></li>
+          <li><strong>Lo pasan a buscar</strong><br /> sin cargo por tu domicilio</li>
+          <li><strong>Tambien podes acercarte</strong> <br /> Dirección: Chorroarin 1280 Horario: de 9hs a 15hs a Viernes)</li>
+          <li><strong>Comunicate con ellos</strong></li>
+          <li><strong>CONTACTO</strong>
+            <br />
+            <span>Email:</span><a class="linkmail" href="mailto:tzedek@tzedaka.org.ar"> tzedek@tzedaka.org.ar </a>
+            <br />
+            <span>WhatsApp</span><a class="linkmail"> 11 4371 8185 </a>
+          </li>
+        </ol>
+        <div class="btn-contenedor">
+          <a href="https://wa.me/+5401143718185" class="btn">📱 Comunicate por WhatsApp</a>
+        </div>
+      </div>
+      <!--contenedor solicitar medicamentos-->
+      <div id="solicitarMed" class="container solicitar-med">
+        <h1>💊 Solicitud de Medicamentos</h1>
+        <p>¡Hola! Estos son los pasos para solicitar tus medicamentos:</p>
+        <ol>
+          <li>
+            <strong>Revisá tu receta médica</strong> <br />Asegurate de que estéactualizada y legible.</li>
+          <li><strong>Asegurate que la receta</strong> <br />indique nombre, DNI, dosis, cantidad, fecha y firma.</li>
+          <li><strong>Adjuntá por mail foto de la receta y del DNI</strong><br />Foto del DNI del paciente y foto nitida de la receta.</li>
+          <li><strong>Enviá la solicitud</strong><br />Clickea el boton al final.</li>
+          <li><strong>Esperá la confirmación</strong> <br />Te contactaremos mediante este email.
+            <a class="linkmail">ayudadirecta@tzedaka.org.ar</a>
+          </li>
+        </ol>
+        <div class="btn-contenedor">
+          <a href="mailto:ayudadirecta@tzedaka.org.ar" class="btn">📧 Enviar solicitud por correo</a>
+        </div>
+      </div>
+    </div>
+    <!-- DESPEDIDA -->
+    <div id="despedida" style="display: none; text-align: center; padding: 2rem">
+      <img src="https://raw.githubusercontent.com/Lautaro496/folleto-medicamentos/main/src/img/logo%20tzedaka.png" alt="Logo Fundación Tzedaká" width="150">
+      <h2>Esperamos que te haya resultado util ❤️</h2>
+      <p>Podés recargar la página para ver las opciones nuevamente.</p>
+    </div>
     <footer>
-      <p>Fundacion Tzedaka<br>Programa Ayuda Directa 2025</p>
+      <p>Fundacion Tzedaka<br />Programa Ayuda Directa 2025</p>
     </footer>
-  </div>
-</body>
+  </body>
+  <script src="script.js"></script>
 </html>
