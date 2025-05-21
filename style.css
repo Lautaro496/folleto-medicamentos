@@ -237,3 +237,45 @@ footer {
     margin: 0.5rem;
   }
 }
+@media (min-width: 900px) {
+  body {
+    font-size: 1.125em; /* Aumentamos a ~18px */
+  }
+
+  .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .container {
+    max-width: 900px;
+    padding: 2rem 3rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+    min-width: 280px;
+  }
+
+  .opciones {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .opciones button {
+    flex: 1 1 45%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p, li {
+    font-size: 1.125rem;
+  }
+}
