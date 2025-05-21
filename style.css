@@ -1,5 +1,6 @@
 /* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 /* RESET */
 * {
   margin: 0;
@@ -7,42 +8,47 @@
   box-sizing: border-box;
 }
 
-/* BASE MOBILE STYLES */
-body {
-  background-color: #f5f5f5;
-  color: #333;
-  line-height: 1.8;
-  font-size: 1.1em;
-}
+/* BASE */
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 1em;
+  line-height: 1.6;
 }
 
 h1 {
+  font-size: 1.5rem;
+  color: #0077cc;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p, a, ul, ol, li, button, span {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700; /* Negrita */
-  font-size: 2em;
+  font-size: 1rem;
   text-align: center;
 }
 
-p,a,ul,ol,li,button,span {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 1em;
-  text-align: center;
+/* CONTENEDOR PRINCIPAL */
+.main-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-/* Contenedor principal */
+/* SECCIONES */
 .container {
   width: 90%;
   margin: 1rem auto;
-  padding: 1.5rem;
-  background-color: white;
+  padding: 1.25rem;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Contenedores ocultos por defecto */
+/* OCULTAR SECCIONES INICIALMENTE */
 .container-opciones,
 .tzedek,
 .solicitar-med,
@@ -50,28 +56,18 @@ p,a,ul,ol,li,button,span {
   display: none;
 }
 
-/* Tipografía */
-h1 {
-  font-size: 1.5rem;
-  color: #0077cc;
-  margin-bottom: 1rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-/* Listas */
+/* LISTAS */
 ol, ul {
   list-style: none;
   text-align: left;
+  margin-top: 1rem;
 }
 
 li {
   margin-bottom: 1rem;
 }
 
-/* Botón y enlaces */
+/* BOTONES */
 .btn-contenedor {
   display: flex;
   justify-content: center;
@@ -80,14 +76,15 @@ li {
 
 .btn {
   display: inline-block;
-  width: 100%;
+  padding: 0.75rem 1.5rem;
   background-color: #0077cc;
   color: white;
-  padding: 0.75rem;
-  border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 600;
   text-align: center;
+  width: auto;
+  min-width: 200px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -96,18 +93,19 @@ li {
   transform: scale(1.03);
 }
 
+/* ENLACES MAIL */
 .linkmail {
   color: blueviolet;
   text-decoration: underline;
   cursor: pointer;
 }
 .linkmail:hover {
-  color: rgba(221, 156, 236, 1);
+  color: #dd9cec;
 }
 
 /* MODAL */
 .modal-inicio {
-  display: flex; /* Se mostrará por JS */
+  display: flex; /* activado por JS */
   position: fixed;
   z-index: 100;
   top: 0;
@@ -115,11 +113,10 @@ li {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-
-  /* ✅ CENTRADO con Flexbox */
   align-items: center;
   justify-content: center;
 }
+
 .modal-contenido {
   background-color: white;
   width: 90%;
@@ -142,6 +139,7 @@ li {
   color: #fa4659;
 }
 
+/* BOTONES DEL MODAL */
 .opciones {
   margin-top: 1rem;
   display: flex;
@@ -158,27 +156,32 @@ li {
   border-radius: 8px;
   cursor: pointer;
 }
-
 .opciones button:hover {
   background-color: #005fa3;
 }
 
-/* Imagen */
-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+/* IMÁGENES */
+.img-contenedor {
+  display: flex;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #eaeaea;
-  font-size: 0.85rem;
-  color: #555;
-  margin-top: 1rem;
+.img-logo {
+  width: 150px;
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.img-donacion {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto;
 }
 
 /* DESPEDIDA */
@@ -188,43 +191,35 @@ footer {
   text-align: center;
 }
 
-.img-contenedor {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-.img-logo{
-    width: 150px;       
-    max-width: 80%;
-    height: auto;
-    object-fit: contain;
-}
-.img-donacion {
-  width: 600px;
-  max-width: 80%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eaeaea;
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 1rem;
 }
 
-/* ====== DESKTOP BREAKPOINTS ====== */
+/* ============================= */
+/* 📱 RESPONSIVE: TABLET & UP   */
+/* ============================= */
+
 @media (min-width: 600px) {
   .container {
-    width: 80%;
+    width: 85%;
     padding: 2rem;
   }
 
   .btn {
-    width: auto;
+    font-size: 1rem;
     min-width: 250px;
   }
-
-  h1 {
-    text-align: center;
-    font-size: 1.6rem;
-  }
-  
 }
+
+/* ============================= */
+/* 🖥️ RESPONSIVE: DESKTOP       */
+/* ============================= */
 
 @media (min-width: 900px) {
   .container {
@@ -232,14 +227,13 @@ footer {
   }
 
   .opciones {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.75rem;
   }
 
   .opciones button {
-    flex: 1 1 40%;
+    flex: 1 1 45%;
     margin: 0.5rem;
   }
 }
