@@ -3,7 +3,7 @@ const cerrar = document.getElementById('modalCerrar');
 const mainContainer = document.getElementById('mainContainer');
 const despedida = document.getElementById('despedida');
 const btnVolver = document.getElementById('btnVolver');
-
+const piePagina = document.getElementById('piePagina');
 // Secciones a mostrar según el botón clickeado
 const secciones = {
   0: document.getElementById('donar'),
@@ -21,6 +21,7 @@ window.onload = (e) => {
 // Volver al inicio al clickear 
   btnVolver.addEventListener('click',() => {
       mainContainer.style.display = 'none';
+
       modal.style.display = 'flex'
     });
 // Cerrar modal con la X y mostrar mensaje de despedida
@@ -40,6 +41,7 @@ document.querySelectorAll('.opcion').forEach((boton) => {
     modal.style.display = 'none';
     mainContainer.style.display = 'block';
     despedida.style.display = 'none';
+    piePagina.style.display = 'block';
 
     // Oculta todas las secciones
     Object.values(secciones).forEach((seccion) => {
