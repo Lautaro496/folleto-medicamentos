@@ -21,7 +21,7 @@ window.onload = (e) => {
 // Volver al inicio al clickear 
   btnVolver.addEventListener('click',() => {
       mainContainer.style.display = 'none';
-
+      piePagina.style.display = 'none';
       modal.style.display = 'flex'
     });
 // Cerrar modal con la X y mostrar mensaje de despedida
