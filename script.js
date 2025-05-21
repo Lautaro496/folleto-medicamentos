@@ -42,9 +42,9 @@ document.querySelectorAll('.opcion').forEach((boton) => {
     despedida.style.display = 'none';
 
     // Oculta todas las secciones
-    // Object.values(secciones).forEach((seccion) => {
-    //   seccion.style.display = 'none';
-    // });
+    Object.values(secciones).forEach((seccion) => {
+      seccion.style.display = 'none';
+    });
     // Muestra la sección seleccionada
     if (secciones[seccionId]) {
       secciones[seccionId].style.display = 'block';
