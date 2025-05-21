@@ -19,7 +19,6 @@ window.onload = (e) => {
 };
 
 // Volver al inicio al clickear 
-document.addEventListener("DOMContentLoaded", function(){
   btnVolver.addEventListener('click',() => {
       mainContainer.style.display = 'none';
       modal.style.display = 'flex'
@@ -30,8 +29,6 @@ cerrar.addEventListener('click',() => {
   mainContainer.style.display = 'none';
   despedida.style.display = 'block';
   });
-
-});
 
 // Manejar clics en los botones del modal
 document.querySelectorAll('.opcion').forEach((boton) => {
