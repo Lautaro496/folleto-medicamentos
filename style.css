@@ -52,7 +52,7 @@ p, a, ul, ol, li, button, span {
 .container-opciones,
 .tzedek,
 .solicitar-med,
-.donar {
+.donar,.despedida,.pie-de-pagina {
   display: none;
 }
 
@@ -72,6 +72,7 @@ li {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -116,7 +117,6 @@ li {
   align-items: center;
   justify-content: center;
 }
-
 .modal-contenido {
   background-color: white;
   width: 90%;
@@ -194,11 +194,8 @@ li {
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #eaeaea;
-  font-size: 0.85rem;
+  font-size: 0.3rem;
   color: #555;
-  margin-top: 1rem;
 }
 
 /* ============================= */
@@ -295,5 +292,10 @@ footer {
     height: auto;
     display: block;
     margin: 0 auto; /* Centrar imágenes */
+  }
+  footer {
+    text-align: center;
+    font-size: 0.3em;
+    color: #555;
   }
 }
