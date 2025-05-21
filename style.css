@@ -237,28 +237,35 @@ footer {
     margin: 0.5rem;
   }
 }
+/* ====== DESKTOP BREAKPOINTS ====== */
 @media (min-width: 900px) {
   body {
-    font-size: 1.125em; /* Aumentamos a ~18px */
+    font-size: 1.125em; /* Aumentar el tamaño de fuente en escritorio */
   }
 
+  /* Contenedor principal */
   .main-container {
-    max-width: 1200px;
+    max-width: 1200px; /* Aumentar el tamaño máximo */
     margin: 0 auto;
     padding: 2rem;
   }
 
+  /* Ajuste en los contenedores */
   .container {
-    max-width: 900px;
+    max-width: 1000px; /* Ampliar el contenedor */
+    margin: 0 auto;
     padding: 2rem 3rem;
   }
 
+  /* Botones más grandes */
   .btn {
-    font-size: 1.1rem;
+    font-size: 1.2rem; /* Aumentar el tamaño de los botones */
     min-width: 280px;
   }
 
+  /* Mejor distribución de las opciones */
   .opciones {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
@@ -266,16 +273,27 @@ footer {
   }
 
   .opciones button {
-    flex: 1 1 45%;
-    font-size: 1rem;
-    padding: 1rem;
+    flex: 1 1 45%; /* Botones con más espacio */
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    margin: 0.5rem 0;
   }
 
+  /* Aumentar tamaño de los encabezados */
   h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Aumentar tamaño de título */
   }
 
   p, li {
-    font-size: 1.125rem;
+    font-size: 1.125rem; /* Mejor tamaño de texto */
+  }
+
+  /* Imagen de donación */
+  .img-donacion {
+    max-width: 600px; /* Asegurarse de que las imágenes no se estiren */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centrar imágenes */
   }
 }
