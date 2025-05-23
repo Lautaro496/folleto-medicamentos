@@ -4,6 +4,8 @@ const mainContainer = document.getElementById('mainContainer');
 const despedida = document.getElementById('despedida');
 const btnVolver = document.getElementById('btnVolver');
 const piePagina = document.getElementById('piePagina');
+const miCard = document.getElementById('miCard');
+const btnMostrarCard = document.getElementById('btnMostrarCard')
 // Secciones a mostrar según el botón clickeado
 const secciones = {
   0: document.getElementById('donar'),
@@ -30,7 +32,22 @@ cerrar.addEventListener('click',() => {
   mainContainer.style.display = 'none';
   despedida.style.display = 'block';
   });
+    // Mostrar card
+  btnMostrarCard.addEventListener('click',()=>{
+    //chequear si la tarjeta esta visible
+    let visible = false;
+    if( miCard.style.display === 'block'){visible = true;}
+    // Mostrar o ocultar tarjeta
+    if(visible ===true){
+      miCard.style.display = 'none';
+      btnMostrarCard.textContent = '¿Qué recetas son válidas?';
+    }
+    else{
+      miCard.style.display ='block';
+      btnMostrarCard.textContent = 'Ocultar ejemplos';
+    }
 
+  });
 // Manejar clics en los botones del modal
 document.querySelectorAll('.opcion').forEach((boton) => {
   boton.addEventListener('click', () => {
