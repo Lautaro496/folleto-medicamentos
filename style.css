@@ -243,26 +243,18 @@ footer {
 /* ============================= */
 
 @media (min-width: 900px) {
+  body {font-size: 1.125em; /* Aumentar el tamaño de fuente en escritorio */}
   .container {
     max-width: 800px;
   }
-
   .opciones {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .opciones button {
     flex: 1 1 45%;
     margin: 0.5rem;
-  }
-}
-/* ====== DESKTOP BREAKPOINTS ====== */
-@media (min-width: 900px) {
-  body {
-    font-size: 1.125em; /* Aumentar el tamaño de fuente en escritorio */
-  }
 
   /* Contenedor principal */
   .main-container {
@@ -322,5 +314,4 @@ footer {
     font-size: 0.3em;
     color: #555;
   }
-
 }
